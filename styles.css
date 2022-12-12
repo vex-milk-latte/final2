@@ -1,0 +1,88 @@
+
+body {
+    font-family: sans-serif;
+    text-align: center;  
+    background-color: #26282b;
+    color: #FFFFFF;
+}
+
+div.main { 
+    background-color: #495159;
+}
+
+
+h1 {
+    font-family:'Segoe UI', sans-serif;
+}
+
+div#header {
+    width: 55%;   
+    background-color: #c0577b;   
+    margin-right: auto;
+}
+
+table#formatting {
+    width: 55%; 
+    height: 20%;  
+    background-color: #c0577b;   
+    margin-right: auto;
+    margin-left: -.5%;
+    
+}
+
+table#formatting th {
+    text-align: center;
+    height: 20%;
+    border-left-style: solid;
+    border-right-style: solid;
+    color:#FFFFFF;
+    
+}
+
+table#formatting  th:hover  {
+    background-color: #a4e5f4;
+    opacity: 50%;
+    transition: 0.5s;
+}
+
+
+h3#games {
+    text-align: center;
+}
+
+
+h3#leaderboards {
+    text-align: center;
+}
+
+h3#Addgame {
+    text-align: center;
+}
+
+/* vv js rendered tables styles vv */
+
+div#jsrendered table {
+
+    transform: translate(50%, 0);
+    width: 50%;
+    font-size: large;
+    color:#FFFFFF;
+    text-align: center;
+    border-color:#c0577b;
+    border-style:solid;
+}
+
+div#jsrendered th, div#jsrendered tr {
+    color:#FFFFFF;
+    text-align: center;
+    border-color:#c0577b;
+    border-bottom-style:solid;
+}
+
+div#daddgame, div#daddscore {
+    visibility: hidden;
+}
+
+div#daddscore {
+    transform: translate(0, -100px);
+}

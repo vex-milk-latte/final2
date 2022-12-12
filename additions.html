@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreBoard Submissions</title>
+    <link rel = "stylesheet" href = "Styles.css">
+    <script src = "functionsads.js"></script>
+</head>
+    <body>
+        <div class = "main"> </div>
+
+        <h1> ScoreBoard.com </h1>
+        <br><br>
+
+        <table id = "formatting"> 
+        
+            <th> <h3 id="Games">  <a href = games.html> GAMES </a>  </h3> </th>
+            <th> <h3 id = "leaderboards" > <a href = "leaderboards.html"> LEADERBOARDS </a>   </h3> </th>
+            <th> <h3 id = "Addgame" > <a href="additions.html"> SOMETHING TO ADD? </a> </h3> </th>  
+        </table> 
+<br> <br>
+        
+        <p> Care to add a game or score to our listings? This is the place! Just select what
+            you want to add, then enter the needed information! We'll do the rest automatically.
+        </p>
+
+        <button id = baddgame onclick = "addgamechosen()"> Game Additions </button> <button id = baddscore onclick = "addscorechosen()"> Score Additions </button>
+
+            <div id = daddgame>
+
+                <h3> Game Name </h3>
+
+                <br>
+
+                <input type = "text" id = "gamenameinp">
+
+                <br>
+
+                <h3> Platform </h3>
+
+                <br>
+
+                <input type = "text" id = "platforminp">
+
+                <br> <br>
+
+                <button id = gamesub onclick = "submission('game')"> Submit </button>
+
+        </div>
+
+        
+
+        <div id = daddscore>
+
+                <h3> Your Name (or alias) </h3>
+
+                <br>
+
+                <input type = "text" id="plnameinp">
+
+                <br>
+
+                <h3> The game you'd like to submit for </h3>
+
+                <br>
+
+                <div id = jsrendered2> <!-- JS rendered option select here --> </div>
+
+                <br>
+
+                <h3> Your score or time. (If you only have one, leave the other blank!)</h3>
+
+                <br>
+
+                <label for = "score"> Score: </label> <input type = "text" id = "score"> 
+                <label for = "time"> Time: </label> <input type = "text" id = "time">
+
+        
+                <br> <br>
+
+                <button id = scoresub onclick = "submission('score')"> Submit </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
